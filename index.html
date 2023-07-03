@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
+
+    <div class="box-principal">
+        <form id="loginForm" method="post" action="login.php">
+            <div class="username">
+                <label for="username">Usuário</label><br>
+                <input type="text" id="username" name="username" required><br>
+            </div>
+            <div class="password">
+                <label for="password">Senha</label><br>
+                <input type="text" name="password" id="password" required><br>
+            </div>
+            <input id="btn" type="submit" value="Login">
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
